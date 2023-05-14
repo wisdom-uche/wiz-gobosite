@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+* {
+    font-family: 'Merriweather', serif;
+}
+
+
+/* navbar */
+/* navbar */
+
+.navbar .nav-link {
+    font-size: 0.8rem !important;
+    font-weight: bold;
+}
+.navbar .nav-item .nav-link.active {
+    color: #BBC495;
+}
+.navbar .nav-item .nav-link {
+    color: black;
+}
+.navbar .nav-item .nav-link:hover {
+    color: #BBC495;
+}
+.navbar .dropdown-menu .dropdown-item{
+    background-color: #BBC495;
+    font-size: 0.8rem !important;
+    font-weight: bold;
+}
+
+/* banner */
+/* banner */
+#banner {
+    background-image: url("/assets/img/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+}
+#banner .container {
+    height: 70vh;
+    width: 50vw;
+    margin-left: 7rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#banner .container .row {
+    padding-top: 16rem;
+    width: 85%;
+    margin: auto;
+}
+#banner .container .row h1 {
+    color: #FFE400;
+    font-size: 4rem;
+    font-weight: bold;
+}
+#banner .container .row p {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* welcome */
+/* welcome */
+#welcome {
+    background-color: #BBC495;
+    height: 35vh;
+}
+#welcome .container {
+    padding: 1rem;
+}
+
+/* latest projects */
+/* latest projects */
+#project h4 {
+    display: flex;
+    flex-direction: row;
+}
+#project h4:before, #project h4:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #BBC495;
+    margin: auto;
+}
+#project h4:before {
+    margin-right: 3rem;
+}
+#project h4:after {
+    margin-left: 3rem;
+}
+#project .btn:hover {
+    background-color: #BBC495;
+    color: white;
+    border-color: #BBC495;
+}
+
+/* services/who we are */
+/* services/who we are */
+#service h4 {
+    display: flex;
+    flex-direction: row;
+}
+#service h4:before, #service h4:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #BBC495;
+    margin: auto;
+}
+#service h4:before {
+    margin-right: 3rem;
+}
+#service h4:after {
+    margin-left: 3rem;
+}
+#service .btn:hover {
+    background-color: #BBC495;
+    color: white;
+    border-color: #BBC495;
+}
+
+/* helping our client */
+/* helping our client */
+#client {
+    background: rgba(18, 131, 6, 0.9);
+    height: 50vh;
+}
+#client h2 {
+    display: flex;
+    flex-direction: row;
+}
+#client h2:before, #client h2:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid white;
+    margin: auto;
+}
+#client h2:before {
+    margin-right: 1rem;
+}
+#client h2:after {
+    margin-left: 1rem;
+}
+#client a {
+    text-decoration: none;
+    color: #FFE400;
+    font-size: 1rem;
+}
+
+/* sponsor */
+/* sponsor */
+#sponsor {
+    background-color: #BBC495;
+}
+#sponsor img:hover {
+    transform: scale(1.1);
+    transition: all 2s ease;
+}
+
+/* footer/contact */
+/* footer/contact */
+#footer {
+    height: 40vh;
+}
+#footer .social-icons i {
+    font-size: 1.3rem;
+}
+#footer .social-icons i:hover {
+    color: #BBC495;
+}
+#footer .copy a {
+    color: black;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+#footer .copy a:hover {
+    color: #BBC495;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+#footer .arrow i {
+    font-size: 2.5rem;
+}
+#footer .arrow i:hover {
+    font-size: 2.5rem;
+    color: #BBC495 !important;
+}
+
+/* media queries */
+/* media queries */
+@media screen and (max-width: 500px) {
+
+    /* banner */
+    /* banner */
+    #banner {
+        background-image: url("/assets/img/banner.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 60vh;
+        position: relative;
+    }
+    #banner .container {
+        height: 0vh;
+        width: 0%;
+        margin-left: 0rem;
+    }
+    #banner .container .row {
+        text-align: center;
+        padding-top: 1rem;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        bottom: 2rem;
+        left: 0rem;
+    }
+    #banner .container .row h1 {
+        color: #FFE400;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+    #banner .container .row p {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    /* welcome */
+    /* welcome */
+    #welcome {
+        background-color: #BBC495;
+        height: 65vh;
+    }
+
+    /* latest projects */
+    /* latest projects */
+    #project h4 {
+        display: flex;
+        flex-direction: row;
+    }
+    #project h4:before, #project h4:after{
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid #BBC495;
+        margin: auto;
+    }
+    #project h4:before {
+        margin-right: 1rem;
+    }
+    #project h4:after {
+        margin-left: 1rem;
+    }
+    #project .btn:hover {
+        background-color: #BBC495;
+        color: white;
+        border-color: #BBC495;
+    }
+
+    /* services/who we are */
+    /* services/who we are */
+    #service h4 {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    #service h4:before, #service h4:after{
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid #BBC495;
+        margin: auto;
+    }
+    #service h4:before {
+        margin-right: 1rem;
+    }
+    #service h4:after {
+        margin-left: 1rem;
+    }
+    #service .btn:hover {
+        background-color: #BBC495;
+        color: white;
+        border-color: #BBC495;
+    }
+
+    /* helping our client */
+    /* helping our client */
+    #client {
+        background: rgba(18, 131, 6, 0.9);
+        height: 100%;
+    }
+    #client a {
+        text-decoration: none;
+        color: #FFE400;
+        font-size: 0.8rem;
+    }
+
+}  
